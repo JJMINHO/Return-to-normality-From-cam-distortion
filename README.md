@@ -20,17 +20,17 @@ This is a tool that performs camera calibration and corrects lens distortion usi
 극단적인 렌즈 왜곡 보정 전후를 시각적으로 확인하기 위해, 인위적인 초광각 이펙트(왜곡)가 적용된 체스보드 동영상을 촬영하여 알고리즘을 적용했습니다.
 
 ### 1. 캘리브레이션 산출 파라미터
-* **RMS Error (재투영 오차):** `1.0368`
+* **RMS Error (재투영 오차):** `1.0384`
 * **Camera Matrix (내부 파라미터 K):**
-  * $f_x$: `473.7452` / $f_y$: `488.8001`
-  * $c_x$: `628.5978` / $c_y$: `362.1670`
+  * $f_x$: `473.7732` / $f_y$: `488.8314`
+  * $c_x$: `628.6649` / $c_y$: `362.1053`
 * **Distortion Coefficients (왜곡 계수):**
-  * `[ 0.20936315 -0.22016411  0.00337147 -0.00748419  0.10756746]`
+  * `[ 0.2091191  -0.21950295  0.00333135 -0.00743993  0.10716187]`
 
 ### 2. 왜곡 보정 결과 (Original vs Undistorted)
 좌측의 왜곡된 원본 영상(`Original`)과 우측의 기하학적 왜곡이 펴진 보정 영상(`Undistorted`)을 나란히 비교한 데모입니다.
 
-![demo_result](https://github.com/user-attachments/assets/379afdf5-fd4b-427c-b911-f32a05c323f5)
+![demo_result (1)](https://github.com/user-attachments/assets/24d82bcc-8d1d-4643-a775-68a165575de4)
 
 
 ---
